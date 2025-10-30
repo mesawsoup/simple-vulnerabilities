@@ -1,7 +1,9 @@
 -- if you dont know how to use getgenv() stay out
 getgenv().Toggle = true
 -- you can do getgenv().Toggle = not getgenv().Toggle and true or false
-game.RunService.Heartbeat:Connect(function()
+while getgenv().Toggle do
+-- heartbeat lags the fuck out of you
+--game.RunService.Heartbeat:Connect(function()
 --for i = 1, 100 do
 for _,v in workspace:GetDescendants() do
   if v.Name == "Checkpoint" and v:IsA("Part") then
@@ -9,5 +11,6 @@ for _,v in workspace:GetDescendants() do
     firetouchinterest(v, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
   end
 end
+end
 --end
-end)
+--end)
