@@ -11,6 +11,7 @@ for _,v in workspace:GetDescendants() do
     firetouchinterest(v, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
   end
 end
+task.wait()
 end
 --end
 --end)
