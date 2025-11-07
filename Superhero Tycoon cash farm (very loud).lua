@@ -1,4 +1,6 @@
-while task.wait() do
+getgenv().Toggle = true
+
+while Toggle do
 
 firetouchinterest(workspace.Tycoons["1"].Extras.Collector.Pad, game.Players.LocalPlayer.Character.HumanoidRootPart, 0)
 firetouchinterest(workspace.Tycoons["1"].Extras.Collector.Pad, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
@@ -10,4 +12,5 @@ for _,v in workspace.CratesCache:GetChildren() do
   firetouchinterest(v.Primary, game.Players.LocalPlayer.Character.HumanoidRootPart, 1)
  
   end
+  task.wait()
 end
