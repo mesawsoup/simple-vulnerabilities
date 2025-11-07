@@ -1,4 +1,5 @@
--- for this https://www.roblox.com/share?code=bad6e419b7befe4abecf68a1b790ba85&type=ExperienceDetails&stamp=1761814634260
+getgenv().Toggle = true
+-- for this https://www.roblox.com/games/102107453217296/Minecart-Obby
 
 --[[for _,v in workspace:GetChildren() do
   if v:IsA("MeshPart") and v.Name == "Diamond" then
@@ -7,6 +8,9 @@
   end
 end]]
 
-game.RunService.Heartbeat:Connect(function()
+while Toggle do
+--game.RunService.Heartbeat:Connect(function()
   game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlayerGotAFKReward"):FireServer()
-end)
+      task.wait()
+    end
+--end)
